@@ -3,7 +3,7 @@ docker_image 'prom/node-exporter' do
   action :pull
 end
 
-docker_container 'node_exporter' do
+docker_container 'node-exporter' do
   repo 'prom/node-exporter'
   tag 'latest'
   port '9100:9100'
